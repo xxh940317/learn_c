@@ -1,1 +1,2 @@
-# learn_c
+# learn_
+用来练习C
