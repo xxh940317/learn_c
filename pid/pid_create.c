@@ -8,9 +8,24 @@
     exit(1);\
 }
 
+int count=0;
+
 int main()
 {
-    printf("Hello world\n");
+    pid_t pid;
+    int count2=0;
+    count++;
+    count2++;
+    printf("count=%d,count2=%d\n",count,count2);
+
+    pid = fork();
+    count++;
+    count2++;
+    
+    printf("count=%d,count2=%d\n",count,count2);
+
+    printf("pid=%d\n",pid);
+
     return 0;
 }
 
